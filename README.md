@@ -29,10 +29,10 @@ Note: You can also create the environment I've tested with by importing _environ
 
 ## Preprocessing Data
 
-The AudioSet dataset is downloaded using this [repository](https://github.com/AmirSh15/AudioSet_downloader). For feature extraction part, [CoCLR](https://github.com/TengdaHan/CoCLR) (only need to put _CoCLR-ucf101-rgb-128-s3d-ep182.tar_ pretrained model in _pretrained_models_ directory) and [VGGish](https://github.com/harritaylor/torchvggish) (need to installed separately) is employed for video and audio correspondigly. 
-For feature extraction, use code in _utils/Feature_ext.py_ and _Merge_extracted_features.py_.
+The AudioSet dataset is downloaded using this [repository](https://github.com/AmirSh15/AudioSet_downloader). For feature extraction part, [CoCLR](https://github.com/TengdaHan/CoCLR) (only need to put _CoCLR-ucf101-rgb-128-s3d-ep182.tar_ pretrained model in _pretrained_models_ directory) and [VGGish](https://github.com/harritaylor/torchvggish) (need to be installed separately) are employed for video and audio correspondigly. 
+For feature extraction, use code in _utils/Feature_ext.py_ and _Merge_extracted_features.py_ afterwards.
 
-Note: you can download the processed data from [here](https://drive.google.com/file/d/1_3H_wByS-cSLLG7vrhgfvdzCnjaXJ2ui/view?usp=sharing) and put in this directory:
+Note: you can download the processed data from [here](https://livewarwickac-my.sharepoint.com/:f:/g/personal/u1880714_live_warwick_ac_uk/EpfXBr2iEhdLkd6eI_MInnMBthWBj89ryaf1IforW2JO8Q?e=zOwFzm) and put in this directory:
 
 ```
 /data/
@@ -55,7 +55,7 @@ Note: you can download the processed data from [here](https://drive.google.com/f
 ## Training
 
 This code is written using [detectron2](https://github.com/facebookresearch/detectron2). You can train the model with running main.py . 
-You can config the model and training parameters in _configs/AudioSey.yaml_.
+You can also config the model and training parameters in _configs/AudioSey.yaml_.
 
 ```
 MODEL:
@@ -104,7 +104,6 @@ DATALOADER:
   STRATIFIED_SPLIT: True
 SOLVER:
   BASE_LR: 0.005
-#  STEPS: (1500, 3200)
   STEPS: ()
   MAX_ITER: 100000
   WARMUP_ITERS: 1000
