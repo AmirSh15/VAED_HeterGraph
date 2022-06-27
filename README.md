@@ -9,6 +9,7 @@
 
 <img src="./docs/1.png" align="center"/>
 In this project, we employ heterogeneous graphs to explicitly capture the spatial and temporal relationships between the modalities and represent detailed information of the underlying signal. Using heterogeneous graph approaches to address the task of visually-aware acoustic event classification, which serves as a compact, efficient and scalable way to represent data in the form of graphs. Through heterogeneous graphs, we show efficiently modeling of intra- and inter-modality relationships both at spatial and temporal scales. Our model can easily be adapted to different scales of events through relevant hyperparameters.
+
 ## Dependency installation
 
 The code was successfully built and run with these versions:
