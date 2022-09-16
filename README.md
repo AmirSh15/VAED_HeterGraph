@@ -1,4 +1,5 @@
 # Visually-aware Acoustic Event Detection using Heterogeneous Graphs
+[paper](https://arxiv.org/pdf/2207.07935.pdf) | [poster](https://livewarwickac-my.sharepoint.com/:b:/g/personal/u1880714_live_warwick_ac_uk/EZwyupTTAOhGnCWhG6BikpkBnB4Il6ezoap0eUtG7waFJw?e=zBhgWv) | [presentation](https://youtu.be/olLhZCcybAM)
 
 <br>
 
